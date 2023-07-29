@@ -28,8 +28,7 @@ User Page
 <img width="930" alt="user" src="https://github.com/mzhang61/BookStore-MERN/assets/81703337/d48f8f3e-bd84-4d3d-bded-90fcfe99f648">
 <br>
 
-Admin Page
-<br>
+Admin Page<br>
 <img width="918" alt="admin" src="https://github.com/mzhang61/BookStore-MERN/assets/81703337/0e9f94e3-5974-4bf9-89eb-2c3a674071f7">
 <br>
 
