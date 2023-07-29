@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         trim: true,
         required: true,
-        unique: 32
+        unique: true
     },
     hashed_password: {
         type: String,
@@ -42,7 +42,6 @@ const userSchema = new mongoose.Schema({
 /*In Mongoose, a virtual is a property that is not stored in MongoDB. 
 Virtuals are typically used for computed properties on documents. */
 userSchema.virtual('password')
-//
 .set(function(password) {
     this._password = password;
     this.salt = uuidv1();

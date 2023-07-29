@@ -15,10 +15,10 @@ exports.userSignupValidator = (req, res, next) => {
         .withMessage('Password must contain at least 6 characters')
         .matches(/\d/)
         .withMessage("password must contain a number");
-    const errors = req.validationErrors();
-    if (errors) {
-        const firstError = errors.map(error => error.msg)[0];
-        return res.status(400).json({ error: firstError });
+        const errors = req.validationErrors();
+        if (errors) {
+            const firstError = errors.map(error => error.msg)[0];
+            return res.status(400).json({ error: firstError });
     }
     //everytime u create a middleware, u need to have next
     next();
